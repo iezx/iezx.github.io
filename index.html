@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="/favicon.ico">
+<meta name="keywords" content="iezx.github.io,iezx,ezx">
+<meta name="description" content="Hello world Welcome to iezx.github.io 你好世界，欢迎来到 iezx.github.io ">
+<link href="https://cdn.902500.xyz/css/iezx/index.css" rel="stylesheet">
+<title>bygns.cyou</title>
+</head>
+<body>
+<h1></h1>
+<div>
+<p>[Version 1.0.0]&copy;Copyright 2022 All rights reserved.</p>
+<p>> "<i>Welcome to iezx.github.io</i>"</p>
+<p>> "<i><span id="jinrishici-sentence">正在加载今日诗词....</span></i>"</p>
+<p>> "<i><img src="https://v1.jinrishici.com/all.svg"></i>"</p>
+<p>> "<a href="https://icp.gov.moe/?keyword=20220780" target="_blank"><p2>萌ICP备2022780号</p2></a>"</P></div>
+<script>
+var str = document.getElementsByTagName('div')[0].innerHTML.toString();
+var i = 0;
+document.getElementsByTagName('div')[0].innerHTML = "";
+
+setTimeout(function() {
+    var se = setInterval(function() {
+        i++;
+        document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
+        if (i == str.length) {
+            clearInterval(se);
+            document.getElementsByTagName('div')[0].innerHTML = str;
+        }
+    }, 30);
+},0);
+</script>
+</body>
+</html>
